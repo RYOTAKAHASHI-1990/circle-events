@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get 'top/index'
   root to: "top#index"
+  get "about" => "top#about", as: "about"
 end
