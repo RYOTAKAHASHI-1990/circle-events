@@ -1,6 +1,36 @@
+# アプリの詳細
+
+## アプリケーション名
+Circle Events
+
+## アプリケーション概要
+会員登録、イベントの告知、ブログ記事の投稿等
+
+## テスト用アカウント
+email: ryo@example, password: chat1990
+
+## 利用方法
+サークル等の活動報告ブログやイベントの告知
+
+## 目指した課題解決
+ホームページを持っていない団体やサークルが活動報告やイベントの告知、会員の管理等ができるようにする
+
+## 実装した機能
+会員登録、会員リストの表示、会員情報の表示
+
+## 実装予定の機能
+ログイン/ログアウト、ブログの投稿機能、イベント告知の投稿
+
+## データベース設計
+
+## ローカルでの動作方法
+% git clone https://github.com/RYOTAKAHASHI-1990/circle-events.git
+% cd circle-events  
+% bundle install  
+
 # テーブル設計
 
-## users テーブル
+## members テーブル
 
 | Column    | Type    | Options                 |
 | ----------|---------|-------------------------|  
@@ -48,7 +78,7 @@
 
 | Column    | Type       | Options                 |
 | ----------|------------|-------------------------|  
-|  titele   | string     |                         |     
+|  title    | string     |                         |     
 |  content  | string     |                         |
 |  user     | references |                         |
 
