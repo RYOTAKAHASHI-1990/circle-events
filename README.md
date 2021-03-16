@@ -21,8 +21,6 @@ email: ryo@example, password: chat1990
 ## 実装予定の機能
 ログイン/ログアウト、ブログの投稿機能、イベント告知の投稿
 
-## データベース設計
-
 ## ローカルでの動作方法
 % git clone https://github.com/RYOTAKAHASHI-1990/circle-events.git
 % cd circle-events  
@@ -62,19 +60,8 @@ email: ryo@example, password: chat1990
 
 * belongs_to user
 
-## tickets テーブル
 
-| Column    | Type    | Options                 |
-| ----------|---------|-------------------------|  
-| comment   | string  | null: false             |
-
-### Association
-
-* belongs_to user
-* belongs_to event
-
-
-## entries テーブル
+## articles テーブル
 
 | Column    | Type       | Options                 |
 | ----------|------------|-------------------------|  
